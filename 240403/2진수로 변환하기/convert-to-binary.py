@@ -1,4 +1,4 @@
-n=29
+n=input()
 
 digits=[]
 
