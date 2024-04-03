@@ -8,6 +8,6 @@ time1=sum(day[m1:])+d1
 time2=sum(day[m2:])+d2
 
 if time2-time1>0:
-    print(date[(time2-time1)%7-1])
+    print(date[(time2-time1)%7])
 else:
     print(date1[(time1-time2)%7-1])
