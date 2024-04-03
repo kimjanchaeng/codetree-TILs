@@ -1,4 +1,4 @@
-n=input()
+n=int(input())
 
 digits=[]
 
