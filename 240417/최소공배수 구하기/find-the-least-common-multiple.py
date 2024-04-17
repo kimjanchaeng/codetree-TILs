@@ -1,10 +1,10 @@
 def print_gcd(n,m):
     a=1
-    for i in range(1,max(n,m)+1):
-        if n%i==0 and m%i==0:
-            a*=i
+    for i in range(min(n,m),n*m+1):
+        if i%n==0 and i%m==0:
+            print(i)
+            break
     
-    print(a)
 
 
 
