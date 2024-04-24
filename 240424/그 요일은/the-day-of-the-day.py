@@ -9,10 +9,10 @@ s=days.index(day)    #find는 list형태 안됨
 day1=sum(dates[:m1])+d1
 day2=sum(dates[:m2])+d2
 
-count=0
+count=1
 
 d=day2-day1
 count+=d//7
-if d&7<=s:
+if d&7>=s:
     count+=1
 print(count)
