@@ -1,6 +1,6 @@
 n=int(input())
 
-block=[0]*100
+block=[0]*101
 for i in range(n):
     a, b = list(map(int,input().split()))
     for j in range(a,b):
