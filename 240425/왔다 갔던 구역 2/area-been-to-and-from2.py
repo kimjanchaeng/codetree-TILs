@@ -8,11 +8,13 @@ for i in range(n):
     if b=='R':
         for j in range(c,c+int(a)):
             block[j]+=1
-            c=j
+            # c=j
+        c=c+int(a)
     else:
         for j in range(c-int(a),c):
             block[j]+=1
-            c=j
+            # c=j
+        c=c-int(a)
 count=0
 for i in block:
     if i>1:
