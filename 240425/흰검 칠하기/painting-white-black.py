@@ -22,7 +22,10 @@ for i in range(n):
                     block[j]=block[j]+'G'
             else:
                 continue 
-        c=c+int(a)
+        if int(a)!=1:
+            c=c+int(a)
+        else:
+            c=c+int(a)-1
     else:
         for j in range(c-int(a),c):
             if block[j][-1]!='G':
@@ -35,10 +38,13 @@ for i in range(n):
                     elif k=='B':
                         cnt1+=1
                 if cnt>=2 and cnt1>=2:
-                    block[j]=block[j]+'G' 
+                    block[j]=block[j]+'G'
             else:
                 continue
-        c=c-int(a)
+        if int(a)!=1:
+            c=c-int(a)
+        else:
+            c=c-int(a)+1
 
 w=0
 b=0
