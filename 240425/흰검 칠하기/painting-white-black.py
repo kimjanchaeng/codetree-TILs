@@ -22,12 +22,10 @@ for i in range(n):
                     block[j]=block[j]+'G'
             else:
                 continue 
-        if int(a)!=1:
-            c=c+int(a)
-        else:
-            c=c+int(a)-1
+        c=c+int(a)-1
+        
     else:
-        for j in range(c-int(a),c):
+        for j in range(c,c-int(a),-1):
             if block[j][-1]!='G':
                 block[j]=block[j]+'W'
                 cnt=0
@@ -41,11 +39,8 @@ for i in range(n):
                     block[j]=block[j]+'G'
             else:
                 continue
-        if int(a)!=1:
-            c=c-int(a)
-        else:
-            c=c-int(a)+1
-
+        c=c-int(a)+1
+        
 w=0
 b=0
 g=0
