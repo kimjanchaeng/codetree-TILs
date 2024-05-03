@@ -12,7 +12,7 @@ for i in range(len(digit)-1):
     if digit[i]==digit[i+1]:
         cnt+=1
     else:
-        # di.append(cnt)
-        result=max(cnt,result)    
+        # di.append(cnt)   
         cnt=1
+    result=max(cnt,result) 
 print(result)
