@@ -7,7 +7,7 @@ for i in range(n):
 
 cnt=1
 di=[]
-result=0
+result=1
 for i in range(len(digit)-1):
     if digit[i]==digit[i+1]:
         cnt+=1
