@@ -30,5 +30,5 @@ for i in range(1,min(len(A),len(B))):
     if A[i]==B[i]:
         print(i)
         break
-    elif i==min(len(A),len(B)) and A[i]!=B[i]:
+    elif i==min(len(A),len(B))-1 and A[i]!=B[i]:
         print(-1)
