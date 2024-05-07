@@ -7,7 +7,7 @@ for i in range(n):
     s.append(a)
 
 cnt=1
-b=0
+b=1
 for j in range(len(s)-1):
     if s[j]<s[j+1]:
         cnt+=1
