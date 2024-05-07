@@ -11,8 +11,9 @@ for i in a:
             cnt+=1
         else:
             cnt=1
+        num=i
     else:
         cnt=0
     ans=max(cnt,ans)
-    num=i
+    
 print(ans)
