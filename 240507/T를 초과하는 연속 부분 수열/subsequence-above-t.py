@@ -9,9 +9,10 @@ for i in a:
     if i>t: 
         if num<i:
             cnt+=1
+            num=i
         else:
             cnt=1
-        num=i
+        
     else:
         cnt=0
     ans=max(cnt,ans)
