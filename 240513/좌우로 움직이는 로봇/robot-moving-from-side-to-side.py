@@ -9,18 +9,22 @@ for i in range(n+m):
     t=int(t)
     if i<n:
         if d=='R':
-            cur+=t
-            A.append(cur)
+            for i in range(t):
+                cur+=1
+                A.append(cur)
         else:
-            cur-=t
-            A.append(cur)
+            for i in range(t):
+                cur-=1
+                A.append(cur)
     else:
         if d=='R':
-            cur1+=t
-            B.append(cur1)
+            for i in range(t):
+                cur1+=1
+                B.append(cur1)
         else:
-            cur1-=t
-            B.append(cur1)
+            for i in range(t):
+                cur1-=1
+                B.append(cur1)
 
 a=len(A)
 b=len(B)
