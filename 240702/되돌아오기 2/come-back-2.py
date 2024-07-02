@@ -20,4 +20,5 @@ for i in s:
     t+=1
     if x==0 and y==0 and cnt>0:
         ans=t
+        break
 print(ans)
