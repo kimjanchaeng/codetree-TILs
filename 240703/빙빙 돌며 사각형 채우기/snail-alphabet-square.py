@@ -17,12 +17,10 @@ mat[x][y]='A'
 for i in range(1,n*m):
     nx,ny=x+dx[dir],y+dy[dir]
 
-    if in_range(nx,ny) and mat[nx][ny]==0:
-        if i>len(upper)-1:
-            i%=len(upper)
-    else:
+    if not in_range(nx,ny) or mat[nx][ny]!=0:
         dir=(dir+1)%4
-    
+
+    i%=len(upper)
     x,y=x+dx[dir],y+dy[dir]
     mat[x][y]=upper[i]
 # print(mat)
