@@ -20,8 +20,10 @@ for i in s:
     elif i=='L':
         dir=(dir+3)%4
     else:
-        x,y=x+dx[dir],y+dy[dir]
-    
-    if in_range(x,y):
-        ans+=mat[x][y]
+        nx,ny=x+dx[dir],y+dy[dir]
+        if in_range(nx,ny):
+            x=nx
+            y=ny
+            ans+=mat[x][y]
+
 print(ans)
