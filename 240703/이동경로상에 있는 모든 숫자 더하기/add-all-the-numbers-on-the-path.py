@@ -18,7 +18,7 @@ for i in s:
     if i=='R':
         dir=(dir+1)%4
     elif i=='L':
-        dir=(dir+1)%4
+        dir=(dir+3)%4
     else:
         x,y=x+dx[dir],y+dy[dir]
     
