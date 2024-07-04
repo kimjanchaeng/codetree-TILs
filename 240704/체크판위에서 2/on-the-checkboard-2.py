@@ -2,7 +2,7 @@
 R, C= tuple(map(int,input().split()))
 
 # mat=[list(map(str,input().split())) for i in range(C)]
-mat=[input().split() for i in range(C)]
+mat=[input().split() for i in range(R)]
 # print(mat)
 
 # sta=mat[0][0]
