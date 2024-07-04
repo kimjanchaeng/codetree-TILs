@@ -1,4 +1,5 @@
-R, C= list(map(int,input().split()))
+# R, C= list(map(int,input().split()))
+R, C= tuple(map(int,input().split()))
 
 # mat=[list(map(str,input().split())) for i in range(C)]
 mat=[input().split() for i in range(C)]
