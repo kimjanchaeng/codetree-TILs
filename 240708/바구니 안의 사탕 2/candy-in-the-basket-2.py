@@ -7,5 +7,5 @@ for i in range(N):
 
 ans=0
 for i in range(1,101-(2*K+1)+2):
-    ans=max(sum(arr[i:i+2*K+2]),ans)
+    ans=max(sum(arr[i:i+2*K+1]),ans)
 print(ans)
