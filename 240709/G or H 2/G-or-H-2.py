@@ -36,10 +36,10 @@ for i in range(l):
                 cnt+=1
             else:
                 cnt1+=1
-        if cnt==cnt1:
+        if cnt==cnt1 or cnt==0 or cnt1==0:
             ans=max(ans,las-fir)
-        elif cnt%2==0 and cnt1==0:
-            ans=max(ans,las-fir)
-        elif cnt1%2==0 and cnt==0:
-            ans=max(ans,las_fir)
+        # elif cnt%2==0 and cnt1==0:
+        #     ans=max(ans,las-fir)
+        # elif cnt1%2==0 and cnt==0:
+        #     ans=max(ans,las_fir)
 print(ans)
