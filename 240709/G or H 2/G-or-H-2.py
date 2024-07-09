@@ -1,4 +1,9 @@
+# 2
+# 2 G
+# 4 G
+
 N=int(input())
+# N=2
 
 arr=[0]*101
 loc_arr=[]
@@ -8,9 +13,13 @@ for i in range(N):
     # las=max(las,int(loc))
     arr[int(loc)]=s
     loc_arr.append(int(loc))
+# arr[2]='G'
+# arr[4]='G'
 ans=0
+# loc_arr.append(2)
+# loc_arr.append(4)
 loc_arr.sort()
-# print(loc_arr[1:])
+# print(loc_arr)
 l=len(loc_arr)
 for i in range(l):
     for j in range(i+1,l):
@@ -18,7 +27,7 @@ for i in range(l):
         cnt1=0
         fir=200
         las=-1
-        for k in range(i,j):
+        for k in range(i,j+1):
             fir=min(fir,loc_arr[k])
             las=max(las,loc_arr[k])
             if arr[loc_arr[k]]=='G':
