@@ -41,5 +41,5 @@ for i in range(l):
         elif cnt%2==0 and cnt1==0:
             ans=max(ans,las-fir)
         elif cnt1%2==0 and cnt==0:
-            ans=max(ans,las_fir)
+            ans=max(ans,las-fir)
 print(ans)
