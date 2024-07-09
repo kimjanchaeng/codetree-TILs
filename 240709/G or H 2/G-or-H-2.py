@@ -27,4 +27,6 @@ for i in range(l):
                 cnt1+=1
         if cnt==cnt1:
             ans=max(ans,las-fir)
+        elif cnt%2+cnt1==0 or cnt1%2+cnt==0:
+            ans=max(ans,las-fir)
 print(ans)
