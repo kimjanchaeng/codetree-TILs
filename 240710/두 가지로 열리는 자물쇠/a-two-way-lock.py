@@ -34,8 +34,8 @@ for j in range(3):
     for k in range(arr2[j]-3,arr2[j]+2):
         a2.append(digit[k])
     # s2.append(digit[arr2[j]-3:arr2[j]+2])
-    s1.append(a1)
-    s2.append(a2)
+    # s1.append(a1)
+    # s2.append(a2)
     cnt=0
     for l in range(5):
         if a1[l] in a2:
