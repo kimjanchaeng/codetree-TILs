@@ -4,6 +4,7 @@ arr=list(map(int,input().split()))
 N=5
 INT_MAX=sys.maxsize
 ans=INT_MAX
+t1,t2,t3,s=0,0,0,0
 for i in range(N):
     for j in range(i+1,N):
         
