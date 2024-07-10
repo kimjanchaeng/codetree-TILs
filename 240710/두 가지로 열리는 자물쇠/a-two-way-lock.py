@@ -32,9 +32,15 @@ for j in range(3):
     a1=[]
     a2=[]
     if N>=5:
-        for k in range(arr1[j]-3,arr1[j]+2):
+        t1=arr1[j]+2
+        t2=arr2[j]+2
+        if t1 > N:
+            t1=t1%N
+        if t2 > N:
+            t2=t2%N
+        for k in range(arr1[j]-3,t1):
             a1.append(digit[k])
-        for k in range(arr2[j]-3,arr2[j]+2):
+        for k in range(arr2[j]-3,t2):
             a2.append(digit[k])
         s1.append(a1)
         s2.append(a2)
