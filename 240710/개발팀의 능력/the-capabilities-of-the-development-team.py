@@ -1,6 +1,7 @@
 import sys
 
-arr=list(map(int,input().split()))
+# arr=list(map(int,input().split()))
+arr=[1, 7, 8, 3, 8]
 N=5
 INT_MAX=sys.maxsize
 ans=INT_MAX
@@ -17,7 +18,7 @@ for i in range(N):
                 t3=sum(arr)-t1-t2
                 if t1!=t2 and t1!=t3 and t2!=t3:
                     s=max(t1,t2,t3)-min(t1,t2,t3)
-                ans=min(ans,s)
+                    ans=min(ans,s)
 if ans==INT_MAX:
     print(-1)
 
