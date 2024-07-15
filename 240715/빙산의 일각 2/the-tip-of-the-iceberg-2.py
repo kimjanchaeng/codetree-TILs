@@ -1,10 +1,21 @@
 n=int(input())
 h=[int(input()) for i in range(n)]
+
+n=5
+h=[
+149,
+934,
+175,
+53,
+933,
+]
+
 # print(h)
 max1=0
 for i in range(1,101):
-    tmp=h
+    tmp=[h[l] for l in range(n)]
     cnt=0
+    # print(tmp)
     for j in range(n):
         tmp[j]-=i
 
