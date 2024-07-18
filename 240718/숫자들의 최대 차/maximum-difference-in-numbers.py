@@ -1,5 +1,5 @@
 n , k = list(map(int,input().split()))
-arr=[int(input()) for i in range(5)]
+arr=[int(input()) for i in range(n)]
 # print(arr)
 sta=min(arr)
 fin=max(arr)
