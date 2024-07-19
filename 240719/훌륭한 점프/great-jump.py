@@ -1,5 +1,9 @@
 n, k =list(map(int,input().split()))
 arr=list(map(int,input().split()))
+
+# n=5 
+# k=2
+# arr=[2, 1, 1, 1, 1]
 # print(arr)
 def is_possible(a):
     idx=[]
@@ -27,4 +31,5 @@ for i in range(max(arr),0,-1):
     # print(is_possible(i))
     if is_possible(i):
         ans=max(ans,i)
+ans=max(ans,arr[0],arr[-1])
 print(ans)
