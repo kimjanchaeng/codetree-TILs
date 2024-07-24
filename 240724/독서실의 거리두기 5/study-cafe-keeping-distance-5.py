@@ -3,6 +3,9 @@
 # n=14
 # s='10000000100000'
 
+# n=15
+# s='010001001000110'
+
 import sys
 n=int(input())
 s=input()
@@ -50,4 +53,8 @@ for i in range(n):
 
     if flag==True:
         las.append(min(s1))
-print(max(las))
+
+if len(las)==0:
+    print(1)
+else:
+    print(max(las))
