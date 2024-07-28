@@ -13,9 +13,9 @@ for i in range(10000-K+1):
     for k in range(N):
         if arr[k]<small or arr[k]>big:
             if abs(big-arr[k])>abs(small-arr[k]):
-                cnt+=abs(small-arr[k])*abs(small-arr[k])
+                cnt+=abs(small-arr[k])
             else:
-                cnt+=abs(big-arr[k])*abs(big-arr[k])
+                cnt+=abs(big-arr[k])
     
     ans=min(cnt,ans) 
 
