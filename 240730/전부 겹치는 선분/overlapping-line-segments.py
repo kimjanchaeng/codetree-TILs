@@ -15,5 +15,6 @@ for i in range(n):
         if not intersect(x1,x2,x3,x4):
             print('No')
             flag=False
+            break
 if flag:
     print('Yes')
