@@ -9,4 +9,5 @@ for i in range(N):
         change[num]+=1
     state[num]=loc
 
-print(change.index(max(change)))
+# print(change.index(max(change)))
+print(sum(change))
